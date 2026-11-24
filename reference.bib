@@ -15,7 +15,7 @@
 % 5. Keep core fields only (drop abstract/keywords/issn/isbn/biburl/bibsource/file/editor/address):
 %    - @inproceedings: author, title, booktitle (@string), year, pages (+ optional doi)
 %    - @article:       author, title, journal (@string), volume, number, pages, year
-%    - @misc (arXiv):  author, title, year, eprint, archivePrefix={arXiv}, primaryClass
+%    - @misc (arXiv):  author, title, howpublished = arxiv # "2303.18223", year
 % 6. arXiv -> Published: upgrade @misc to @inproceedings/@article IN-PLACE and KEEP the same citekey.
 %
 % --- Venue Abbreviation Convention ---
@@ -66,4 +66,465 @@
 @string{jmlr     = "J. of Machine Learning Research ({JMLR})"}
 @string{tmlr     = "Trans. on Machine Learning Research ({TMLR})"}
 
+% --- Preprints ---
+@string{arxiv    = "arXiv preprint arXiv:"}
+
 % --- Entries (add new entries below; use `SPC l k' to normalize citekeys to Format B) ---
+
+@misc{appleyard2016optimizing,
+  author       = {Jeremy Appleyard and Tom{\'{a}}s Kocisk{\'{y}} and Phil Blunsom},
+  title        = {Optimizing Performance of Recurrent Neural Networks on {GPUs}},
+  howpublished = arxiv # "1604.01946",
+  year         = {2016}
+}
+
+@misc{bai2018empirical,
+  author       = {Shaojie Bai and J. Zico Kolter and Vladlen Koltun},
+  title        = {An empirical evaluation of generic convolutional and recurrent networks for sequence modeling},
+  howpublished = arxiv # "1803.01271",
+  year         = {2018}
+}
+
+@inproceedings{boydwickizer2008corey,
+  author       = {Silas Boyd-Wickizer and Haibo Chen and Rong Chen and Yandong Mao and Frans Kaashoek and Robert Morris and Aleksey Pesterev and Lex Stein and Ming Wu and Yuehua Dai and Yang Zhang and Zheng Zhang},
+  title        = {Corey: an operating system for many cores},
+  booktitle    = osdi,
+  pages        = {43--57},
+  year         = {2008}
+}
+
+@misc{chen2015mxnet,
+  author       = {Tianqi Chen and Mu Li and Yutian Li and Min Lin and Naiyan Wang and Minjie Wang and Tianjun Xiao and Bing Xu and Chiyuan Zhang and Zheng Zhang},
+  title        = {Mxnet: A flexible and efficient machine learning library for heterogeneous distributed systems},
+  howpublished = arxiv # "1512.01274",
+  year         = {2015}
+}
+
+@inproceedings{chen2018neural,
+  author       = {Chen, Ricky T. Q. and Rubanova, Yulia and Bettencourt, Jesse and Duvenaud, David},
+  title        = {Neural Ordinary Differential Equations},
+  booktitle    = neurips,
+  year         = {2018}
+}
+
+@inproceedings{chen2021drone,
+  author       = {Chen, Patrick and Yu, Hsiang-Fu and Dhillon, Inderjit and Hsieh, Cho-Jui},
+  title        = {{DRONE}: Data-aware Low-rank Compression for Large {NLP} Models},
+  booktitle    = neurips,
+  pages        = {29321--29334},
+  year         = {2021}
+}
+
+@inproceedings{cho2014learning,
+  author       = {Kyunghyun Cho and Bart {van Merri\"{e}nboer} and Caglar Gulcehre and Dzmitry Bahdanau and Fethi Bougares and Holger Schwenk and Yoshua Bengio},
+  title        = {Learning Phrase Representations using {RNN} Encoder--Decoder for Statistical Machine Translation},
+  booktitle    = emnlp,
+  year         = {2014}
+}
+
+@inproceedings{connor1991recurrent,
+  author       = {Jerome Connor and Les E. Atlas and Douglas R. Martin},
+  title        = {Recurrent Networks and {NARMA} Modeling},
+  booktitle    = neurips,
+  pages        = {301--308},
+  year         = {1991}
+}
+
+@inproceedings{david2023decision,
+  author       = {Shmuel Bar David and Itamar Zimerman and Eliya Nachmani and Lior Wolf},
+  title        = {Decision {S4}: Efficient Sequence-Based {RL} via State Spaces Layers},
+  booktitle    = iclr,
+  year         = {2023}
+}
+
+@inproceedings{debrouwer2019gru,
+  author       = {De Brouwer, Edward and Simm, Jaak and Arany, Adam and Moreau, Yves},
+  title        = {{GRU}-{ODE}-{B}ayes: Continuous modeling of sporadically-observed time series},
+  booktitle    = neurips,
+  year         = {2019}
+}
+
+@inproceedings{devlin2019bert,
+  author       = {Devlin, Jacob and Chang, Ming-Wei and Lee, Kenton and Toutanova, Kristina},
+  title        = {{BERT}: Pre-training of Deep Bidirectional Transformers for Language Understanding},
+  booktitle    = naacl,
+  pages        = {4171--4186},
+  year         = {2019}
+}
+
+@inproceedings{frantar2023sparsegpt,
+  author       = {Frantar, Elias and Alistarh, Dan},
+  title        = {{S}parse{GPT}: Massive Language Models Can be Accurately Pruned in One-Shot},
+  booktitle    = icml,
+  pages        = {10323--10337},
+  year         = {2023}
+}
+
+@inproceedings{fu2023hungry,
+  author       = {Daniel Y Fu and Tri Dao and Khaled Kamal Saab and Armin W Thomas and Atri Rudra and Christopher Re},
+  title        = {Hungry {H}ungry {H}ippos: Towards Language Modeling with State Space Models},
+  booktitle    = iclr,
+  year         = {2023}
+}
+
+@inproceedings{goel2022raw,
+  author       = {Karan Goel and Albert Gu and Chris Donahue and Christopher R{\'e}},
+  title        = {It's raw! audio generation with state-space models},
+  booktitle    = icml,
+  pages        = {7616--7633},
+  year         = {2022}
+}
+
+@inproceedings{goodfellow2013maxout,
+  author       = {Ian Goodfellow and David Warde-Farley and Mehdi Mirza and Aaron Courville and Yoshua Bengio},
+  title        = {Maxout networks},
+  booktitle    = icml,
+  pages        = {1319--1327},
+  year         = {2013}
+}
+
+@inproceedings{gu2020hippo,
+  author       = {Gu, Albert and Dao, Tri and Ermon, Stefano and Rudra, Atri and R\'{e}, Christopher},
+  title        = {{HiPPO}: Recurrent Memory with Optimal Polynomial Projections},
+  booktitle    = neurips,
+  year         = {2020}
+}
+
+@inproceedings{gu2021combining,
+  author       = {Albert Gu and Isys Johnson and Karan Goel and Khaled Kamal Saab and Tri Dao and Atri Rudra and Christopher R{\'e}},
+  title        = {Combining Recurrent, Convolutional, and Continuous-time Models with Linear State Space Layers},
+  booktitle    = neurips,
+  year         = {2021}
+}
+
+@inproceedings{gu2022efficiently,
+  author       = {Albert Gu and Karan Goel and Christopher R{\'e}},
+  title        = {Efficiently Modeling Long Sequences with Structured State Spaces},
+  booktitle    = iclr,
+  year         = {2022}
+}
+
+@inproceedings{gu2022parameterization,
+  author       = {Gu, Albert and Goel, Karan and Gupta, Ankit and R\'{e}, Christopher},
+  title        = {On the Parameterization and Initialization of Diagonal State Space Models},
+  booktitle    = neurips,
+  year         = {2022}
+}
+
+@inproceedings{gu2023how,
+  author       = {Albert Gu and Isys Johnson and Aman Timalsina and Atri Rudra and Christopher R{\'e}},
+  title        = {How to Train your {HIPPO}: State Space Models with Generalized Orthogonal Basis Projections},
+  booktitle    = iclr,
+  year         = {2023}
+}
+
+@misc{gu2023mamba,
+  author       = {Albert Gu and Tri Dao},
+  title        = {Mamba: Linear-Time Sequence Modeling with Selective State Spaces},
+  howpublished = arxiv # "2312.00752",
+  year         = {2023}
+}
+
+@inproceedings{gupta2022diagonal,
+  author       = {Ankit Gupta and Albert Gu and Jonathan Berant},
+  title        = {Diagonal State Spaces are as Effective as Structured State Spaces},
+  booktitle    = neurips,
+  year         = {2022}
+}
+
+@inproceedings{hajimolahoseini2021compressing,
+  author       = {Hajimolahoseini, Habib and Rezagholizadeh, Mehdi and Partovinia, Vahid and Tahaei, Marzieh and Awad, Omar Mohamed and Liu, Yang},
+  title        = {Compressing pre-trained language models using progressive low rank decomposition},
+  booktitle    = neurips,
+  year         = {2021}
+}
+
+@inproceedings{han2015learning,
+  author       = {Song Han and Jeff Pool and John Tran and William Dally},
+  title        = {Learning both Weights and Connections for Efficient Neural Network},
+  booktitle    = neurips,
+  pages        = {1135--1143},
+  year         = {2015}
+}
+
+@inproceedings{he2015convolutional,
+  author       = {Kaiming He and Jian Sun},
+  title        = {Convolutional neural networks at constrained time cost},
+  booktitle    = cvpr,
+  pages        = {5353--5360},
+  year         = {2015}
+}
+
+@inproceedings{hihi1995hierarchical,
+  author       = {Salah {El Hihi} and Yoshua Bengio},
+  title        = {Hierarchical recurrent neural networks for long-term dependencies},
+  booktitle    = neurips,
+  pages        = {493--499},
+  year         = {1995}
+}
+
+@inproceedings{hsu2022language,
+  author       = {Yen-Chang Hsu and Ting Hua and Sungen Chang and Qian Lou and Yilin Shen and Hongxia Jin},
+  title        = {Language model compression with weighted low-rank factorization},
+  booktitle    = iclr,
+  year         = {2022}
+}
+
+@inproceedings{imani2019mfbo,
+  author       = {Imani, Mahdi and Ghoreishi, Seyede Fatemeh and Allaire, Douglas and Braga-Neto, Ulisses M.},
+  title        = {{MFBO-SSM}: Multi-Fidelity {B}ayesian Optimization for Fast Inference in State-Space Models},
+  booktitle    = aaai,
+  pages        = {7858--7865},
+  year         = {2019}
+}
+
+@inproceedings{jaeger2002adaptive,
+  author       = {Herbert Jaeger},
+  title        = {Adaptive nonlinear system identification with echo state networks},
+  booktitle    = neurips,
+  pages        = {609--616},
+  year         = {2002}
+}
+
+@inproceedings{ji2024adaptive,
+  author       = {Ji, Yixin and Xiang, Yang and Li, Juntao and Xia, Qingrong and Ye, Zi and Duan, Xinyu and Wang, Zhefeng and Chen, Kehai and Zhang, Min},
+  title        = {Adaptive Feature-based Low-Rank Compression of Large Language Models via {B}ayesian Optimization},
+  booktitle    = emnlp,
+  year         = {2024}
+}
+
+@inproceedings{jinqi2023haloc,
+  author       = {Xiao Jinqi and Zhang Chengming and Gong Yu and Yin Miao and Sui Yang and Xiang Lizhi and Tao Dingwen and Yuan Bo},
+  title        = {{HALOC}: hardware-aware automatic low-rank compression for compact neural networks},
+  booktitle    = aaai,
+  year         = {2023}
+}
+
+@inproceedings{kanai2017preventing,
+  author       = {Sekitoshi Kanai and Yasuhiro Fujiwara and Sotetsu Iwamura},
+  title        = {Preventing Gradient Explosions in Gated Recurrent Units},
+  booktitle    = neurips,
+  pages        = {435--444},
+  year         = {2017}
+}
+
+@inproceedings{kitaev2020reformer,
+  author       = {Nikita Kitaev and {\L}ukasz Kaiser and Anselm Levskaya},
+  title        = {Reformer: The Efficient Transformer},
+  booktitle    = iclr,
+  year         = {2020}
+}
+
+@inproceedings{korthikanti2023reducing,
+  author       = {Vijay Korthikanti and Jared Casper and Sangkug Lym and Lawrence McAfee and Michael Andersch and Mohammad Shoeybi and Bryan Catanzaro},
+  title        = {Reducing Activation Recomputation in Large Transformer Models},
+  booktitle    = mlsys,
+  year         = {2023}
+}
+
+@inproceedings{li2017pruning,
+  author       = {Hao Li and Asim Kadav and Igor Durdanovic and Hanan Samet and Hans Peter Graf},
+  title        = {Pruning Filters for Efficient {ConvNets}},
+  booktitle    = iclr,
+  year         = {2017}
+}
+
+@misc{lipton2015critical,
+  author       = {Zachary C. Lipton and John Berkowitz and Charles Elkan},
+  title        = {A Critical Review of Recurrent Neural Networks for Sequence Learning},
+  howpublished = arxiv # "1506.00019",
+  year         = {2015}
+}
+
+@inproceedings{lu2024not,
+  author       = {Xudong Lu and Qi Liu and Yuhui Xu and Aojun Zhou and Siyuan Huang and Bo Zhang and Junchi Yan and Hongsheng Li},
+  title        = {Not All Experts are Equal: Efficient Expert Pruning and Skipping for Mixture-of-Experts Large Language Models},
+  booktitle    = acl,
+  pages        = {6159--6172},
+  year         = {2024}
+}
+
+@inproceedings{ma2023mega,
+  author       = {Xuezhe Ma and Chunting Zhou and Xiang Kong and Junxian He and Liangke Gui and Graham Neubig and Jonathan May and Luke Zettlemoyer},
+  title        = {Mega: Moving Average Equipped Gated Attention},
+  booktitle    = iclr,
+  year         = {2023}
+}
+
+@inproceedings{mao2017exploring,
+  author       = {Huizi Mao and Song Han and Jeff Pool and Wenshuo Li and Xingyu Liu and Yu Wang and William J. Dally},
+  title        = {Exploring the Granularity of Sparsity in Convolutional Neural Networks},
+  booktitle    = cvpr,
+  pages        = {13--20},
+  year         = {2017}
+}
+
+@inproceedings{narang2017exploring,
+  author       = {Sharan Narang and Greg Diamos and Shubho Sengupta and Erich Elsen},
+  title        = {Exploring Sparsity in Recurrent Neural Networks},
+  booktitle    = iclr,
+  year         = {2017}
+}
+
+@inproceedings{narayanan2021efficient,
+  author       = {Deepak Narayanan and Mohammad Shoeybi and Jared Casper and Patrick LeGresley and Mostofa Patwary and Vijay Korthikanti and Dmitri Vainbrand and Prethvi Kashinkunti and Julie Bernauer and Bryan Catanzaro and Amar Phanishayee and Matei Zaharia},
+  title        = {Efficient large-scale language model training on {GPU} clusters using {megatron-LM}},
+  booktitle    = sc,
+  year         = {2021}
+}
+
+@inproceedings{orvieto2023resurrecting,
+  author       = {Orvieto, Antonio and Smith, Samuel L and Gu, Albert and Fernando, Anushan and Gulcehre, Caglar and Pascanu, Razvan and De, Soham},
+  title        = {Resurrecting recurrent neural networks for long sequences},
+  booktitle    = icml,
+  pages        = {26670--26698},
+  year         = {2023}
+}
+
+@misc{paganini2020streamlining,
+  author       = {Michela Paganini and Jessica Zosa Forde},
+  title        = {Streamlining Tensor and Network Pruning in PyTorch},
+  howpublished = arxiv # "2004.13770",
+  year         = {2020}
+}
+
+@misc{pascanu2012understanding,
+  author       = {Razvan Pascanu and Tomas Mikolov and Yoshua Bengio},
+  title        = {Understanding the exploding gradient problem},
+  howpublished = arxiv # "1211.5063",
+  year         = {2012}
+}
+
+@inproceedings{pascanu2013difficulty,
+  author       = {Razvan Pascanu and Tomas Mikolov and Yoshua Bengio},
+  title        = {On the difficulty of training recurrent neural networks},
+  booktitle    = icml,
+  pages        = {1310--1318},
+  year         = {2013}
+}
+
+@inproceedings{pascanu2014how,
+  author       = {Razvan Pascanu and Caglar Gulcehre and Kyunghyun Cho and Yoshua Bengio},
+  title        = {How to construct deep recurrent neural networks},
+  booktitle    = iclr,
+  year         = {2014}
+}
+
+@article{pedregosa2011scikit,
+  author       = {Fabian Pedregosa and Ga\"{e}I Varoquaux and Alexandre Gramfort and Vincent Michel and Bertrand Thirion and Olivier Grisel and Mathieu Blondel and Peter Prettenhofer and Ron Weiss and Vincent Dubourg and Jake Vanderplas and Alexandre Passos and David Cournapeau},
+  title        = {Scikit-learn: Machine Learning in {P}ython},
+  journal      = jmlr,
+  volume       = {12},
+  pages        = {2825--2830},
+  year         = {2011}
+}
+
+@inproceedings{rubanova2019latent,
+  author       = {Rubanova, Yulia and Chen, Ricky T. Q. and Duvenaud, David},
+  title        = {Latent ordinary differential equations for irregularly-sampled time series},
+  booktitle    = neurips,
+  year         = {2019}
+}
+
+@inproceedings{shim2017svd,
+  author       = {Shim, Kyuhong and Lee, Minjae and Choi, Iksoo and Boo, Yoonho and Sung, Wonyong},
+  title        = {{SVD-Softmax}: Fast Softmax Approximation on Large Vocabulary Neural Networks},
+  booktitle    = neurips,
+  year         = {2017}
+}
+
+@inproceedings{siddiqi2005fast,
+  author       = {Siddiqi, Sajid M. and Moore, Andrew W.},
+  title        = {Fast inference and learning in large-state-space {HMMs}},
+  booktitle    = icml,
+  pages        = {800--807},
+  year         = {2005}
+}
+
+@inproceedings{smith2023simplified,
+  author       = {Jimmy T. H. Smith and Andrew Warrington and Scott Linderman},
+  title        = {Simplified State Space Layers for Sequence Modeling},
+  booktitle    = iclr,
+  year         = {2023}
+}
+
+@inproceedings{sun2024simple,
+  author       = {Mingjie Sun and Zhuang Liu and Anna Bair and J Zico Kolter},
+  title        = {A Simple and Effective Pruning Approach for Large Language Models},
+  booktitle    = iclr,
+  year         = {2024}
+}
+
+@inproceedings{tay2021long,
+  author       = {Yi Tay and Mostafa Dehghani and Samira Abnar and Yikang Shen and Dara Bahri and Philip Pham and Jinfeng Rao and Liu Yang and Sebastian Ruder and Donald Metzler},
+  title        = {{L}ong {R}ange {A}rena: A Benchmark for Efficient Transformers},
+  booktitle    = iclr,
+  year         = {2021}
+}
+
+@inproceedings{vaswani2017attention,
+  author       = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, {\L}ukasz and Polosukhin, Illia},
+  title        = {Attention is All you Need},
+  booktitle    = neurips,
+  year         = {2017}
+}
+
+@inproceedings{voelker2019legendre,
+  author       = {Voelker, Aaron and Kaji{\'c}, Ivana and Eliasmith, Chris},
+  title        = {{L}egendre {M}emory {U}nits: Continuous-Time Representation in Recurrent Neural Networks},
+  booktitle    = neurips,
+  year         = {2019}
+}
+
+@inproceedings{wen2016learning,
+  author       = {Wei Wen and Chunpeng Wu and Yandan Wang and Yiran Chen and Hai Li},
+  title        = {Learning structured sparsity in deep neural networks},
+  booktitle    = neurips,
+  pages        = {2082--2090},
+  year         = {2016}
+}
+
+@inproceedings{wen2018learning,
+  author       = {Wei Wen and Yiran Chen and Hai Li and Yuxiong He and Samyam Rajbhandari and Minjia Zhang and Wenhan Wang and Fang Liu and Bin Hu},
+  title        = {Learning Intrinsic Sparse Structures Within Long Short-Term Memory},
+  booktitle    = iclr,
+  year         = {2018}
+}
+
+@inproceedings{yang2017tensor,
+  author       = {Yinchong Yang and Denis Krompass and Volker Tresp},
+  title        = {Tensor-train recurrent neural networks for video classification},
+  booktitle    = icml,
+  pages        = {3891--3900},
+  year         = {2017}
+}
+
+@inproceedings{ye2018learning,
+  author       = {Jinmian Ye and Linnan Wang and Guangxi Li and Di Chen and Shandian Zhe and Xinqi Chu and Zenglin Xu},
+  title        = {Learning Compact Recurrent Neural Networks with Block-Term Tensor Decomposition},
+  booktitle    = cvpr,
+  pages        = {9378--9387},
+  year         = {2018}
+}
+
+@misc{zaremba2014recurrent,
+  author       = {Zaremba, Wojciech and Sutskever, Ilya and Vinyals, Oriol},
+  title        = {Recurrent Neural Network Regularization},
+  howpublished = arxiv # "1409.2329",
+  year         = {2014}
+}
+
+@inproceedings{zhou2021informer,
+  author       = {Zhou, Haoyi and Zhang, Shanghang and Peng, Jieqi and Zhang, Shuai and Li, Jianxin and Xiong, Hui and Zhang, Wancai},
+  title        = {Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting},
+  booktitle    = aaai,
+  pages        = {11106--11115},
+  year         = {2021}
+}
+
+@inproceedings{zhu2024vision,
+  author       = {Lianghui Zhu and Bencheng Liao and Qian Zhang and Xinlong Wang and Wenyu Liu and Xinggang Wang},
+  title        = {Vision {M}amba: Efficient Visual Representation Learning with Bidirectional State Space Model},
+  booktitle    = icml,
+  year         = {2024}
+}
