@@ -3,7 +3,7 @@
 % Remote: git@github.com:ottercc/bib.git
 %
 % --- Entry Maintenance Rules ---
-% 1. Citekey (Format B): <first_author_lastname><4digit_year><first_title_word>
+% 1. Citekey: <first_author_lastname><4digit_year><first_title_word>
 %    - Lowercase ASCII [a-z0-9] only (NO `'`, `:`, spaces). Skip stop words (a/an/the/on/...).
 %    - Examples: brown2020language, vaswani2017attention, zhao2023survey
 % 2. Title case protection: wrap ONLY acronyms/proper nouns in `{...}`
@@ -24,7 +24,7 @@
 %
 % --- Emacs Shortcuts ---
 %   SPC n b o     -> open this master .bib file
-%   SPC l k       -> rekey entry at point to Format B (inside .bib)
+%   SPC l k       -> rekey entry at point to <author><year><titleword> (inside .bib)
 %   SPC l c / s   -> clean & align entry / sort .bib buffer
 %   SPC n b r     -> refresh citar cache after editing
 %   SPC l @       -> insert citation in LaTeX / Org
@@ -69,7 +69,7 @@
 % --- Preprints ---
 @string{arxiv    = "arXiv preprint arXiv:"}
 
-% --- Entries (add new entries below; use `SPC l k' to normalize citekeys to Format B) ---
+% --- Entries (add new entries below; use `SPC l k' to normalize citekeys) ---
 
 @misc{appleyard2016optimizing,
   author       = {Jeremy Appleyard and Tom{\'{a}}s Kocisk{\'{y}} and Phil Blunsom},
