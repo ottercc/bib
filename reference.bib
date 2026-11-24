@@ -1,14 +1,31 @@
 % ============================================================================
 % Personal Master Bibliography (`~/Github/my-bib/reference.bib`)
 % Remote: git@github.com:ottercc/bib.git
-% Citekey convention (Format B): <first_author_lastname><4digit_year><first_meaningful_title_word>
-%   Examples: brown2020language, vaswani2017attention, jouppi2017indatacenter
-%   Rules: lowercase ASCII [a-z0-9] only — NO apostrophes ('), NO colons (:), NO spaces.
 %
-% Emacs shortcuts:
+% --- Entry Maintenance Rules ---
+% 1. Citekey (Format B): <first_author_lastname><4digit_year><first_title_word>
+%    - Lowercase ASCII [a-z0-9] only (NO `'`, `:`, spaces). Skip stop words (a/an/the/on/...).
+%    - Examples: brown2020language, vaswani2017attention, zhao2023survey
+% 2. Title case protection: wrap ONLY acronyms/proper nouns in `{...}`
+%    - Good:  title = {Scaling {LLM} Inference over {RDMA} in {GPU} Clusters}
+%    - Avoid: title = {{Scaling LLM Inference...}} (locks full sentence case)
+% 3. Pages: always use double hyphen `--` (e.g. pages = {123--135}).
+% 4. Authors: consistent `First Last and First Last`; space after initials (`Tom B. Brown`);
+%    avoid manual `and others` unless huge author lists (let .bst truncate).
+% 5. Keep core fields only (drop abstract/keywords/issn/isbn/biburl/bibsource/file/editor/address):
+%    - @inproceedings: author, title, booktitle (@string), year, pages (+ optional doi)
+%    - @article:       author, title, journal (@string), volume, number, pages, year
+%    - @misc (arXiv):  author, title, year, eprint, archivePrefix={arXiv}, primaryClass
+% 6. arXiv -> Published: upgrade @misc to @inproceedings/@article IN-PLACE and KEEP the same citekey.
+%
+% --- Venue Abbreviation Convention ---
+% Abbreviate structural nouns only: Proc., Int., Conf., Symp., Trans., J.
+% Keep domain words in full + protect acronyms with `{...}`.
+%
+% --- Emacs Shortcuts ---
 %   SPC n b o     -> open this master .bib file
 %   SPC l k       -> rekey entry at point to Format B (inside .bib)
-%   SPC l c / s   -> clean/format entry / sort .bib buffer
+%   SPC l c / s   -> clean & align entry / sort .bib buffer
 %   SPC n b r     -> refresh citar cache after editing
 %   SPC l @       -> insert citation in LaTeX / Org
 %   SPC l t B     -> incrementally sync newly cited entries to paper's .bib
@@ -16,37 +33,37 @@
 % ============================================================================
 
 % --- Networking ---
-@string{sigcomm  = "Proc. {ACM} {SIGCOMM} Conference ({SIGCOMM})"}
-@string{nsdi     = "Proc. {USENIX} Symposium on Networked Systems Design and Implementation ({NSDI})"}
-@string{conext   = "Proc. {ACM} International Conference on Emerging Networking Experiments and Technologies ({CoNEXT})"}
-@string{imc      = "Proc. {ACM} Internet Measurement Conference ({IMC})"}
+@string{sigcomm  = "Proc. {ACM} {SIGCOMM} Conf. ({SIGCOMM})"}
+@string{nsdi     = "Proc. {USENIX} Symp. on Networked Systems Design and Implementation ({NSDI})"}
+@string{conext   = "Proc. {ACM} Int. Conf. on Emerging Networking Experiments and Technologies ({CoNEXT})"}
+@string{imc      = "Proc. {ACM} Internet Measurement Conf. ({IMC})"}
 @string{hotnets  = "Proc. {ACM} Workshop on Hot Topics in Networks ({HotNets})"}
-@string{infocom  = "Proc. {IEEE} International Conference on Computer Communications ({INFOCOM})"}
-@string{ton      = "{IEEE/ACM} Transactions on Networking ({ToN})"}
+@string{infocom  = "Proc. {IEEE} Int. Conf. on Computer Communications ({INFOCOM})"}
+@string{ton      = "{IEEE/ACM} Trans. on Networking ({ToN})"}
 @string{ccr      = "{ACM} {SIGCOMM} Computer Communication Review ({CCR})"}
-@string{jsac     = "{IEEE} Journal on Selected Areas in Communications ({JSAC})"}
+@string{jsac     = "{IEEE} J. on Selected Areas in Communications ({JSAC})"}
 
 % --- Systems & ML Systems ---
-@string{osdi     = "Proc. {USENIX} Symposium on Operating Systems Design and Implementation ({OSDI})"}
-@string{sosp     = "Proc. {ACM} Symposium on Operating Systems Principles ({SOSP})"}
-@string{eurosys  = "Proc. European Conference on Computer Systems ({EuroSys})"}
-@string{atc      = "Proc. {USENIX} Annual Technical Conference ({ATC})"}
-@string{asplos   = "Proc. {ACM} International Conference on Architectural Support for Programming Languages and Operating Systems ({ASPLOS})"}
+@string{osdi     = "Proc. {USENIX} Symp. on Operating Systems Design and Implementation ({OSDI})"}
+@string{sosp     = "Proc. {ACM} Symp. on Operating Systems Principles ({SOSP})"}
+@string{eurosys  = "Proc. European Conf. on Computer Systems ({EuroSys})"}
+@string{atc      = "Proc. {USENIX} Annual Technical Conf. ({ATC})"}
+@string{asplos   = "Proc. {ACM} Int. Conf. on Architectural Support for Programming Languages and Operating Systems ({ASPLOS})"}
 @string{mlsys    = "Proc. Machine Learning and Systems ({MLSys})"}
-@string{socc     = "Proc. {ACM} Symposium on Cloud Computing ({SoCC})"}
-@string{fast     = "Proc. {USENIX} Conference on File and Storage Technologies ({FAST})"}
-@string{sc       = "Proc. International Conference for High Performance Computing, Networking, Storage and Analysis ({SC})"}
+@string{socc     = "Proc. {ACM} Symp. on Cloud Computing ({SoCC})"}
+@string{fast     = "Proc. {USENIX} Conf. on File and Storage Technologies ({FAST})"}
+@string{sc       = "Proc. Int. Conf. for High Performance Computing, Networking, Storage and Analysis ({SC})"}
 
 % --- AI / ML / NLP ---
 @string{neurips  = "Advances in Neural Information Processing Systems ({NeurIPS})"}
-@string{icml     = "Proc. International Conference on Machine Learning ({ICML})"}
-@string{iclr     = "International Conference on Learning Representations ({ICLR})"}
+@string{icml     = "Proc. Int. Conf. on Machine Learning ({ICML})"}
+@string{iclr     = "Int. Conf. on Learning Representations ({ICLR})"}
 @string{acl      = "Proc. Annual Meeting of the Association for Computational Linguistics ({ACL})"}
-@string{emnlp    = "Proc. Conference on Empirical Methods in Natural Language Processing ({EMNLP})"}
-@string{naacl    = "Proc. Conference of the North American Chapter of the Association for Computational Linguistics ({NAACL})"}
-@string{cvpr     = "Proc. {IEEE/CVF} Conference on Computer Vision and Pattern Recognition ({CVPR})"}
-@string{aaai     = "Proc. {AAAI} Conference on Artificial Intelligence ({AAAI})"}
-@string{jmlr     = "Journal of Machine Learning Research ({JMLR})"}
-@string{tmlr     = "Transactions on Machine Learning Research ({TMLR})"}
+@string{emnlp    = "Proc. Conf. on Empirical Methods in Natural Language Processing ({EMNLP})"}
+@string{naacl    = "Proc. Conf. of the North American Chapter of the Association for Computational Linguistics ({NAACL})"}
+@string{cvpr     = "Proc. {IEEE/CVF} Conf. on Computer Vision and Pattern Recognition ({CVPR})"}
+@string{aaai     = "Proc. {AAAI} Conf. on Artificial Intelligence ({AAAI})"}
+@string{jmlr     = "J. of Machine Learning Research ({JMLR})"}
+@string{tmlr     = "Trans. on Machine Learning Research ({TMLR})"}
 
 % --- Entries (add new entries below; use `SPC l k' to normalize citekeys to Format B) ---
