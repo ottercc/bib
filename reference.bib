@@ -61,7 +61,12 @@
 @string{emnlp    = "Proc. Conf. on Empirical Methods in Natural Language Processing ({EMNLP})"}
 @string{naacl    = "Proc. Conf. of the North American Chapter of the Association for Computational Linguistics ({NAACL})"}
 @string{cvpr     = "Proc. {IEEE/CVF} Conf. on Computer Vision and Pattern Recognition ({CVPR})"}
+@string{iccv     = "Proc. {IEEE/CVF} Int. Conf. on Computer Vision ({ICCV})"}
 @string{aaai     = "Proc. {AAAI} Conf. on Artificial Intelligence ({AAAI})"}
+@string{kdd      = "Proc. {ACM} {SIGKDD} Int. Conf. on Knowledge Discovery and Data Mining ({KDD})"}
+@string{www      = "Proc. {ACM} Web Conf. ({WWW})"}
+@string{wsdm     = "Proc. {ACM} Int. Conf. on Web Search and Data Mining ({WSDM})"}
+@string{sigir    = "Proc. Int. {ACM} {SIGIR} Conf. on Research and Development in Information Retrieval ({SIGIR})"}
 @string{jmlr     = "J. of Machine Learning Research ({JMLR})"}
 @string{tmlr     = "Trans. on Machine Learning Research ({TMLR})"}
 
@@ -69,6 +74,29 @@
 @string{arxiv    = "arXiv preprint arXiv:"}
 
 % --- Entries (add new entries below; use `SPC l k' to normalize citekeys) ---
+
+@inproceedings{alon2021bottleneck,
+  author       = {Uri Alon and Eran Yahav},
+  title        = {On the Bottleneck of Graph Neural Networks and its Practical Implications},
+  booktitle    = iclr,
+  year         = {2021}
+}
+
+@inproceedings{alqiam2024transferable,
+  author       = {Abd AlRhman AlQiam and Yuanjun Yao and Zhaodong Wang and Satyajeet Singh Ahuja and Ying Zhang and Sanjay G. Rao and Bruno Ribeiro and Mohit Tawarmalani},
+  title        = {Transferable Neural {WAN} {TE} for Changing Topologies},
+  booktitle    = sigcomm,
+  pages        = {86--102},
+  year         = {2024}
+}
+
+@inproceedings{applegate2003making,
+  author       = {David Applegate and Edith Cohen},
+  title        = {Making intra-domain routing robust to changing and uncertain traffic demands: understanding fundamental tradeoffs},
+  booktitle    = sigcomm,
+  pages        = {313--324},
+  year         = {2003}
+}
 
 @misc{appleyard2016optimizing,
   author       = {Jeremy Appleyard and Tom{\'{a}}s Kocisk{\'{y}} and Phil Blunsom},
@@ -84,12 +112,42 @@
   year         = {2018}
 }
 
+@inproceedings{bakhtin2025network,
+  author       = {Alexander Bakhtin and Matteo Esposito and Valentina Lenarduzzi and Davide Taibi},
+  title        = {Network Centrality as a New Perspective on Microservice Architecture},
+  booktitle    = {2025 {IEEE} 22nd International Conference on Software Architecture ({ICSA})},
+  pages        = {72--83},
+  year         = {2025}
+}
+
+@inproceedings{behnamghader2024llm2vec,
+  author       = {Parishad BehnamGhader and Vaibhav Adlakha and Marius Mosbach and Dzmitry Bahdanau and Nicolas Chapados and Siva Reddy},
+  title        = {{LLM}2{V}ec: {L}arge {L}anguage {M}odels Are Secretly Powerful Text Encoders},
+  booktitle    = {First Conference on Language Modeling},
+  year         = {2024}
+}
+
+@inproceedings{benson2010understanding,
+  author       = {Theophilus Benson and Ashok Anand and Aditya Akella and Ming Zhang},
+  title        = {Understanding data center traffic characteristics},
+  booktitle    = sigcomm,
+  pages        = {92--99},
+  year         = {2010}
+}
+
 @inproceedings{boydwickizer2008corey,
   author       = {Silas Boyd-Wickizer and Haibo Chen and Rong Chen and Yandong Mao and Frans Kaashoek and Robert Morris and Aleksey Pesterev and Lex Stein and Ming Wu and Yuehua Dai and Yang Zhang and Zheng Zhang},
   title        = {Corey: an operating system for many cores},
   booktitle    = osdi,
   pages        = {43--57},
   year         = {2008}
+}
+
+@misc{chai2023graphllm,
+  author       = {Ziwei Chai and Tianjie Zhang and Liang Wu and Kaiqiao Han and Xiaohai Hu and Xuanwen Huang and Yang Yang},
+  title        = {{GraphLLM}: Boosting Graph Reasoning Ability of Large Language Model},
+  howpublished = arxiv # "2310.05845",
+  year         = {2023}
 }
 
 @misc{chen2015mxnet,
@@ -114,6 +172,14 @@
   year         = {2021}
 }
 
+@inproceedings{chen2024llaga,
+  author       = {Runjin Chen and Tong Zhao and Ajay Kumar Jaiswal and Neil Shah and Zhangyang Wang},
+  title        = {{LL}a{GA}: Large Language and Graph Assistant},
+  booktitle    = icml,
+  pages        = {7809--7823},
+  year         = {2024}
+}
+
 @inproceedings{cho2014learning,
   author       = {Kyunghyun Cho and Bart {van Merri\"{e}nboer} and Caglar Gulcehre and Dzmitry Bahdanau and Fethi Bougares and Holger Schwenk and Yoshua Bengio},
   title        = {Learning Phrase Representations using {RNN} Encoder--Decoder for Statistical Machine Translation},
@@ -127,6 +193,21 @@
   booktitle    = neurips,
   pages        = {301--308},
   year         = {1991}
+}
+
+@inproceedings{craven1998learning,
+  author       = {Mark Craven and Dan DiPasquo and Dayne Freitag and Andrew McCallum and Tom Mitchell and Kamal Nigam and Se\'{a}n Slattery},
+  title        = {Learning to extract symbolic knowledge from the {W}orld {W}ide {W}eb},
+  booktitle    = aaai,
+  year         = {1998}
+}
+
+@inproceedings{danna2012practical,
+  author       = {Emilie Danna and Subhasree Mandal and Arjun Singh},
+  title        = {A practical algorithm for balancing the max-min fairness and throughput objectives in traffic engineering},
+  booktitle    = infocom,
+  pages        = {846--854},
+  year         = {2012}
 }
 
 @inproceedings{david2023decision,
@@ -151,6 +232,58 @@
   year         = {2019}
 }
 
+@misc{dong2024flex,
+  author       = {Juechu Dong and Boyuan Feng and Driss Guessous and Yanbo Liang and Horace He},
+  title        = {{F}lex {A}ttention: A Programming Model for Generating Optimized Attention Kernels},
+  howpublished = arxiv # "2412.05496",
+  year         = {2024}
+}
+
+@inproceedings{dwivedi2021generalization,
+  author       = {Vijay Prakash Dwivedi and Xavier Bresson},
+  title        = {A Generalization of {Transformer} Networks to Graphs},
+  booktitle    = aaai,
+  year         = {2021}
+}
+
+@article{dwivedi2023benchmarking,
+  author       = {Vijay Prakash Dwivedi and Chaitanya K. Joshi and Anh Tuan Luu and Thomas Laurent and Yoshua Bengio and Xavier Bresson},
+  title        = {Benchmarking graph neural networks},
+  journal      = jmlr,
+  year         = {2023}
+}
+
+@article{fan2019survey,
+  author       = {Ching-Ling Fan and Wen-Chih Lo and Yu-Tung Pai and Cheng-Hsin Hsu},
+  title        = {A Survey on 360° Video Streaming: Acquisition, Transmission, and Display},
+  journal      = {{ACM} Comput. Surv.},
+  volume       = {52},
+  number       = {4},
+  year         = {2019}
+}
+
+@inproceedings{fan2025aether,
+  author       = {Yu Fan and Jingyao Liu and Pengjin Xie and Liang Liu},
+  title        = {Aether: Toward Generalized Traffic Engineering with Elastic Multi-agent Graph {Transformers}},
+  booktitle    = infocom,
+  pages        = {1--10},
+  year         = {2025}
+}
+
+@inproceedings{fang2025uniglm,
+  author       = {Yi Fang and Dongzhe Fan and Sirui Ding and Ninghao Liu and Qiaoyu Tan},
+  title        = {{UniGLM}: Training One Unified Language Model for Text-Attributed Graphs Embedding},
+  booktitle    = wsdm,
+  year         = {2025}
+}
+
+@misc{feng2024taglas,
+  author       = {Jiarui Feng and Hao Liu and Lecheng Kong and Yixin Chen and Muhan Zhang},
+  title        = {{TAGLAS}: An atlas of text-attributed graph datasets in the era of large graph and language models},
+  howpublished = arxiv # "2406.14683",
+  year         = {2024}
+}
+
 @inproceedings{frantar2023sparsegpt,
   author       = {Elias Frantar and Dan Alistarh},
   title        = {{SparseGPT}: Massive Language Models Can be Accurately Pruned in One-Shot},
@@ -164,6 +297,21 @@
   title        = {{Hungry Hungry Hippos}: Towards Language Modeling with State Space Models},
   booktitle    = iclr,
   year         = {2023}
+}
+
+@inproceedings{ge2023openagi,
+  author       = {Yingqiang Ge and Wenyue Hua and Kai Mei and jianchao ji and Juntao Tan and Shuyuan Xu and Zelong Li and Yongfeng Zhang},
+  title        = {OpenAGI: When {LLM} Meets Domain Experts},
+  booktitle    = neurips,
+  pages        = {5539--5568},
+  year         = {2023}
+}
+
+@inproceedings{giles1998citeseer,
+  author       = {C Lee Giles and Kurt D Bollacker and Steve Lawrence},
+  title        = {{CiteSeer}: An automatic citation indexing system},
+  booktitle    = {Proceedings of the third {ACM} Conference on Digital Libraries},
+  year         = {1998}
 }
 
 @inproceedings{goel2022raw,
@@ -180,6 +328,13 @@
   booktitle    = icml,
   pages        = {1319--1327},
   year         = {2013}
+}
+
+@misc{googledeepmind2024gemini,
+  author       = {{Google DeepMind}},
+  title        = {{Gemini} 2.5 Flash Image},
+  howpublished = {\url{https://aistudio.google.com/models/gemini-2-5-flash-image}},
+  year         = {2024}
 }
 
 @inproceedings{gu2020hippo,
@@ -254,6 +409,13 @@
   year         = {2015}
 }
 
+@inproceedings{he2025unigraph,
+  author       = {Yufei He and Yuan Sui and Xiaoxin He and Bryan Hooi},
+  title        = {{UniGraph}: Learning a Unified Cross-Domain Foundation Model for Text-Attributed Graphs},
+  booktitle    = kdd,
+  year         = {2025}
+}
+
 @inproceedings{hihi1995hierarchical,
   author       = {Salah {El Hihi} and Yoshua Bengio},
   title        = {Hierarchical recurrent neural networks for long-term dependencies},
@@ -262,11 +424,47 @@
   year         = {1995}
 }
 
+@inproceedings{hong2013achieving,
+  author       = {Chi-Yao Hong and Srikanth Kandula and Ratul Mahajan and Ming Zhang and Vijay Gill and Mohan Nanduri and Roger Wattenhofer},
+  title        = {Achieving high utilization with software-driven {WAN}},
+  booktitle    = sigcomm,
+  pages        = {15--26},
+  year         = {2013}
+}
+
+@inproceedings{hou2022graphmae,
+  author       = {Zhenyu Hou and Xiao Liu and Yukuo Cen and Yuxiao Dong and Hongxia Yang and Chunjie Wang and Jie Tang},
+  title        = {{GraphMAE}: Self-Supervised Masked Graph Autoencoders},
+  booktitle    = kdd,
+  year         = {2022}
+}
+
+@misc{hou2025model,
+  author       = {Xinyi Hou and Yanjie Zhao and Shenao Wang and Haoyu Wang},
+  title        = {Model Context Protocol ({MCP}): Landscape, Security Threats, and Future Research Directions},
+  howpublished = arxiv # "2503.23278",
+  year         = {2025}
+}
+
 @inproceedings{hsu2022language,
   author       = {Yen-Chang Hsu and Ting Hua and Sungen Chang and Qian Lou and Yilin Shen and Hongxia Jin},
   title        = {Language model compression with weighted low-rank factorization},
   booktitle    = iclr,
   year         = {2022}
+}
+
+@inproceedings{hu2020open,
+  author       = {Weihua Hu and Matthias Fey and Marinka Zitnik and Yuxiao Dong and Hongyu Ren and Bowen Liu and Michele Catasta and Jure Leskovec},
+  title        = {Open graph benchmark: datasets for machine learning on graphs},
+  booktitle    = neurips,
+  year         = {2020}
+}
+
+@inproceedings{hudson2019gqa,
+  author       = {Drew A. Hudson and Christopher D. Manning},
+  title        = {{GQA}: A New Dataset for Real-World Visual Reasoning and Compositional Question Answering},
+  booktitle    = cvpr,
+  year         = {2019}
 }
 
 @inproceedings{imani2019mfbo,
@@ -285,6 +483,14 @@
   year         = {2002}
 }
 
+@inproceedings{jain2013b4,
+  author       = {Sushant Jain and Alok Kumar and Subhasree Mandal and Joon Ong and Leon Poutievski and Arjun Singh and Subbaiah Venkata and Jim Wanderer and Junlan Zhou and Min Zhu and Jon Zolla and Urs H\"{o}lzle and Stephen Stuart and Amin Vahdat},
+  title        = {{B4}: experience with a globally-deployed software defined wan},
+  booktitle    = sigcomm,
+  pages        = {3--14},
+  year         = {2013}
+}
+
 @inproceedings{ji2024adaptive,
   author       = {Yixin Ji and Yang Xiang and Juntao Li and Qingrong Xia and Zi Ye and Xinyu Duan and Zhefeng Wang and Kehai Chen and Min Zhang},
   title        = {Adaptive Feature-based Low-Rank Compression of Large Language Models via {Bayesian} Optimization},
@@ -292,11 +498,18 @@
   year         = {2024}
 }
 
-@inproceedings{xiao2023haloc,
-  author       = {Jinqi Xiao and Chengming Zhang and Yu Gong and Miao Yin and Yang Sui and Lizhi Xiang and Dingwen Tao and Bo Yuan},
-  title        = {{HALOC}: Hardware-Aware Automatic Low-Rank Compression for Compact Neural Networks},
-  booktitle    = aaai,
-  year         = {2023}
+@misc{jiang2024mixtral,
+  author       = {Albert Q. Jiang and Alexandre Sablayrolles and Antoine Roux and Arthur Mensch and Blanche Savary and Chris Bamford and Devendra Singh Chaplot and Diego de las Casas and Emma Bou Hanna and Florian Bressand and Gianna Lengyel and Guillaume Bour and Guillaume Lample and Lélio Renard Lavaud and Lucile Saulnier and Marie-Anne Lachaux and Pierre Stock and Sandeep Subramanian and Sophia Yang and Szymon Antoniak and Teven Le Scao and Théophile Gervet and Thibaut Lavril and Thomas Wang and Timothée Lacroix and William El Sayed},
+  title        = {Mixtral of Experts},
+  howpublished = arxiv # "2401.04088",
+  year         = {2024}
+}
+
+@misc{joshi2025transformers,
+  author       = {Chaitanya K. Joshi},
+  title        = {{Transformers} are Graph Neural Networks},
+  howpublished = arxiv # "2506.22084",
+  year         = {2025}
 }
 
 @inproceedings{kanai2017preventing,
@@ -307,11 +520,35 @@
   year         = {2017}
 }
 
+@inproceedings{kim2022pure,
+  author       = {Jinwoo Kim and Dat Tien Nguyen and Seonwoo Min and Sungjun Cho and Moontae Lee and Honglak Lee and Seunghoon Hong},
+  title        = {Pure {Transformers} are Powerful Graph Learners},
+  booktitle    = neurips,
+  year         = {2022}
+}
+
 @inproceedings{kitaev2020reformer,
   author       = {Nikita Kitaev and {\L}ukasz Kaiser and Anselm Levskaya},
   title        = {Reformer: The Efficient Transformer},
   booktitle    = iclr,
   year         = {2020}
+}
+
+@article{knight2011internet,
+  author       = {Simon Knight and Hung X. Nguyen and Nickolas Falkner and Rhys Bowden and Matthew Roughan},
+  title        = {The Internet Topology Zoo},
+  journal      = jsac,
+  volume       = {29},
+  number       = {9},
+  pages        = {1765--1775},
+  year         = {2011}
+}
+
+@inproceedings{kong2025gofa,
+  author       = {Lecheng Kong and Jiarui Feng and Hao Liu and Chengsong Huang and Jiaxin Huang and Yixin Chen and Muhan Zhang},
+  title        = {{GOFA}: A Generative One-For-All Model for Joint Graph Language Modeling},
+  booktitle    = iclr,
+  year         = {2025}
 }
 
 @inproceedings{korthikanti2023reducing,
@@ -321,6 +558,13 @@
   year         = {2023}
 }
 
+@inproceedings{koster2010robust,
+  author       = {Arie M. C. A. Koster and Manuel Kutschka and Christian Raack},
+  title        = {Towards Robust Network Design using Integer Linear Programming Techniques},
+  booktitle    = {Proceedings of the {NGI} 2010, Paris, France},
+  year         = {2010}
+}
+
 @inproceedings{li2017pruning,
   author       = {Hao Li and Asim Kadav and Igor Durdanovic and Hanan Samet and Hans Peter Graf},
   title        = {Pruning Filters for Efficient {ConvNets}},
@@ -328,11 +572,50 @@
   year         = {2017}
 }
 
+@inproceedings{li2024zerog,
+  author       = {Yuhan Li and Peisong Wang and Zhixun Li and Jeffrey Xu Yu and Jia Li},
+  title        = {{ZeroG}: Investigating Cross-dataset Zero-shot Transferability in Graphs},
+  booktitle    = kdd,
+  year         = {2024}
+}
+
 @misc{lipton2015critical,
   author       = {Zachary C. Lipton and John Berkowitz and Charles Elkan},
   title        = {A Critical Review of Recurrent Neural Networks for Sequence Learning},
   howpublished = arxiv # "1506.00019",
   year         = {2015}
+}
+
+@inproceedings{liu2024figret,
+  author       = {Ximeng Liu and Shizhen Zhao and Yong Cui and Xinbing Wang},
+  title        = {{FIGRET}: Fine-Grained Robustness-Enhanced Traffic Engineering},
+  booktitle    = sigcomm,
+  pages        = {117--135},
+  year         = {2024}
+}
+
+@inproceedings{liu2024one,
+  author       = {Hao Liu and Jiarui Feng and Lecheng Kong and Ningyue Liang and Dacheng Tao and Yixin Chen and Muhan Zhang},
+  title        = {{One For All}: Towards Training One Graph Model For All Classification Tasks},
+  booktitle    = iclr,
+  year         = {2024}
+}
+
+@article{liu2024topologies,
+  author       = {Ling Liu and Pan Zhou and Gang Sun and Xi Chen and Tao Wu and Hongfang Yu and Mohsen Guizani},
+  title        = {Topologies in distributed machine learning: Comprehensive survey, recommendations and future directions},
+  journal      = {Neurocomput.},
+  volume       = {567},
+  number       = {C},
+  year         = {2024}
+}
+
+@inproceedings{liu2025cegs,
+  author       = {Jianmin Liu and Li Chen and Dan Li and Yukai Miao},
+  title        = {{CEGS}: Configuration Example Generalizing Synthesizer},
+  booktitle    = nsdi,
+  pages        = {1327--1347},
+  year         = {2025}
 }
 
 @inproceedings{lu2024not,
@@ -343,11 +626,48 @@
   year         = {2024}
 }
 
+@misc{luo2024graphinstruct,
+  author       = {Zihan Luo and Xiran Song and Hong Huang and Jianxun Lian and Chenhao Zhang and Jinqi Jiang and Xing Xie and Hai Jin},
+  title        = {Graph{I}nstruct: Empowering Large Language Models with Graph Understanding and Reasoning Capability},
+  howpublished = arxiv # "2403.04483",
+  year         = {2024}
+}
+
+@inproceedings{ma2023graph,
+  author       = {Liheng Ma and Chen Lin and Derek Lim and Adriana Romero-Soriano and K. Dokania and Mark Coates and Philip H. S. Torr and Ser-Nam Lim},
+  title        = {Graph {Inductive} {Biases} in {Transformers} without {Message} {Passing}},
+  booktitle    = icml,
+  year         = {2023}
+}
+
+@inproceedings{ma2023laplacian,
+  author       = {George Ma and Yifei Wang and Yisen Wang},
+  title        = {{L}aplacian {C}anonization: A Minimalist Approach to Sign and Basis Invariant Spectral Embedding},
+  booktitle    = neurips,
+  year         = {2023}
+}
+
 @inproceedings{ma2023mega,
   author       = {Xuezhe Ma and Chunting Zhou and Xiang Kong and Junxian He and Liangke Gui and Graham Neubig and Jonathan May and Luke Zettlemoyer},
   title        = {Mega: Moving Average Equipped Gated Attention},
   booktitle    = iclr,
   year         = {2023}
+}
+
+@inproceedings{ma2025block,
+  author       = {Dongyang Ma and Yan Wang and Tian Lan},
+  title        = {{B}lock-{A}ttention for Efficient Prefilling},
+  booktitle    = iclr,
+  year         = {2025}
+}
+
+@article{mai2024opportunities,
+  author       = {Gengchen Mai and Weiming Huang and Jin Sun and others},
+  title        = {On the Opportunities and Challenges of Foundation Models for GeoAI (Vision Paper)},
+  journal      = {{ACM} Trans. Spatial Algorithms Syst.},
+  volume       = {10},
+  number       = {2},
+  year         = {2024}
 }
 
 @inproceedings{mao2017exploring,
@@ -356,6 +676,28 @@
   booktitle    = cvpr,
   pages        = {13--20},
   year         = {2017}
+}
+
+@article{mccallum2000automating,
+  author       = {Andrew Kachites McCallum and Kamal Nigam and Jason Rennie and Kristie Seymore},
+  title        = {Automating the construction of internet portals with machine learning},
+  journal      = {Information Retrieval},
+  year         = {2000}
+}
+
+@misc{mernyei2020wiki,
+  author       = {P{\'e}ter Mernyei and C{\u{a}}t{\u{a}}lina Cangea},
+  title        = {{Wiki-CS}: A {W}ikipedia-Based Benchmark for Graph Neural Networks},
+  howpublished = arxiv # "2007.02901",
+  year         = {2020}
+}
+
+@inproceedings{mondal2023what,
+  author       = {Rajdeep Mondal and Alan Tang and Ryan Beckett and Todd Millstein and George Varghese},
+  title        = {What do {LLMs} need to Synthesize Correct Router Configurations?},
+  booktitle    = hotnets,
+  pages        = {189--195},
+  year         = {2023}
 }
 
 @inproceedings{narang2017exploring,
@@ -370,6 +712,42 @@
   title        = {Efficient large-scale language model training on {GPU} clusters using {megatron-LM}},
   booktitle    = sc,
   year         = {2021}
+}
+
+@inproceedings{narayanan2021solving,
+  author       = {Deepak Narayanan and Fiodar Kazhamiaka and Firas Abuzaid and Peter Kraft and Akshay Agrawal and Srikanth Kandula and Stephen Boyd and Matei Zaharia},
+  title        = {Solving Large-Scale Granular Resource Allocation Problems Efficiently with {POP}},
+  booktitle    = sosp,
+  pages        = {521--537},
+  year         = {2021}
+}
+
+@inproceedings{ni2019justifying,
+  author       = {Jianmo Ni and Jiacheng Li and Julian McAuley},
+  title        = {Justifying Recommendations using Distantly-Labeled Reviews and Fine-Grained Aspects},
+  booktitle    = emnlp,
+  year         = {2019}
+}
+
+@misc{openai2024gpt,
+  author       = {OpenAI},
+  title        = {{GPT}-4o System Card},
+  howpublished = arxiv # "2410.21276",
+  year         = {2024}
+}
+
+@misc{openai2024gpta,
+  author       = {OpenAI},
+  title        = {{GPT} {T}ext-{E}mbedding-3-{L}arge},
+  howpublished = {\url{https://platform.openai.com/docs/guides/embeddings}},
+  year         = {2024}
+}
+
+@misc{openai2024hello,
+  author       = {{OpenAI}},
+  title        = {Hello {GPT}-4o},
+  howpublished = {\url{https://openai.com/index/hello-gpt-4o}},
+  year         = {2024}
 }
 
 @inproceedings{orvieto2023resurrecting,
@@ -418,11 +796,114 @@
   year         = {2011}
 }
 
+@inproceedings{perry2023dote,
+  author       = {Yarin Perry and Felipe Vieira Frujeri and Chaim Hoch and Srikanth Kandula and Ishai Menache and Michael Schapira and Aviv Tamar},
+  title        = {{DOTE}: Rethinking (Predictive) {WAN} Traffic Engineering},
+  booktitle    = nsdi,
+  pages        = {1557--1581},
+  year         = {2023}
+}
+
+@inproceedings{poutievski2022jupiter,
+  author       = {Leon Poutievski and Omid Mashayekhi and Joon Ong and others},
+  title        = {Jupiter evolving: transforming google's datacenter network via optical circuit switches and software-defined networking},
+  booktitle    = sigcomm,
+  pages        = {66--85},
+  year         = {2022}
+}
+
+@inproceedings{press2022train,
+  author       = {Ofir Press and Noah Smith and Mike Lewis},
+  title        = {Train Short, Test Long: Attention with Linear Biases Enables Input Length Extrapolation},
+  booktitle    = iclr,
+  year         = {2022}
+}
+
+@misc{qwenteam2024qwen2,
+  author       = {{Qwen Team}},
+  title        = {{Qwen2-VL}: Enhancing Vision-Language Model's Perception of the World at Any Resolution},
+  howpublished = arxiv # "2409.12191",
+  year         = {2024}
+}
+
+@misc{radford2021learning,
+  author       = {Alec Radford and Jong Wook Kim and Chris Hallacy and Aditya Ramesh and Gabriel Goh and Sandhini Agarwal and Girish Sastry and Amanda Askell and Pamela Mishkin and Jack Clark and Gretchen Krueger and Ilya Sutskever},
+  title        = {Learning Transferable Visual Models From Natural Language Supervision},
+  howpublished = arxiv # "2103.00020",
+  year         = {2021}
+}
+
+@misc{reid2026rotary,
+  author       = {Isaac Reid and Arijit Sehanobish and Cederik Höfs and Bruno Mlodozeniec and Leonhard Vulpius and Federico Barbero and Adrian Weller and Krzysztof Choromanski and Richard E. Turner and Petar Veličković},
+  title        = {Rotary Position Encodings for Graphs},
+  howpublished = arxiv # "2509.22259",
+  year         = {2026}
+}
+
+@inproceedings{reimers2019sentence,
+  author       = {Nils Reimers and Iryna Gurevych},
+  title        = {Sentence-{BERT}: Sentence Embeddings using {S}iamese {BERT}-Networks},
+  booktitle    = emnlp,
+  year         = {2019}
+}
+
+@inproceedings{roughan2002experience,
+  author       = {Matthew Roughan and Albert Greenberg and Charles Kalmanek and Michael Rumsewicz and Jennifer Yates and Yin Zhang},
+  title        = {Experience in measuring backbone traffic variability: models, metrics, measurements and meaning},
+  booktitle    = sigcomm,
+  pages        = {91--92},
+  year         = {2002}
+}
+
+@inproceedings{roy2015inside,
+  author       = {Arjun Roy and Hongyi Zeng and Jasmeet Bagga and George Porter and Alex C Snoeren},
+  title        = {Inside the social network's (datacenter) network},
+  booktitle    = sigcomm,
+  pages        = {123--137},
+  year         = {2015}
+}
+
 @inproceedings{rubanova2019latent,
   author       = {Yulia Rubanova and Ricky T. Q. Chen and David Duvenaud},
   title        = {Latent ordinary differential equations for irregularly-sampled time series},
   booktitle    = neurips,
   year         = {2019}
+}
+
+@inproceedings{rzadca2020autopilot,
+  author       = {Krzysztof Rzadca and Pawel Findeisen and Jacek Swiderski and Przemyslaw Zych and Przemyslaw Broniek and Jarek Kusmierek and Pawel Nowak and Beata Strack and Piotr Witusowski and Steven Hand and John Wilkes},
+  title        = {Autopilot: workload autoscaling at Google},
+  booktitle    = eurosys,
+  year         = {2020}
+}
+
+@inproceedings{saha2021explagraphs,
+  author       = {Swarnadeep Saha and Prateek Yadav and Lisa Bauer and Mohit Bansal},
+  title        = {{E}xpla{G}raphs: An Explanation Graph Generation Task for Structured Commonsense Reasoning},
+  booktitle    = emnlp,
+  year         = {2021}
+}
+
+@inproceedings{schlinker2017engineering,
+  author       = {Brandon Schlinker and Hyojeong Kim and Timothy Cui and Ethan Katz-Bassett and Harsha V. Madhyastha and Italo Cunha and James Quinn and Saif Hasan and Petr Lapukhov and Hongyi Zeng},
+  title        = {Engineering Egress with Edge Fabric: Steering Oceans of Content to the World},
+  booktitle    = sigcomm,
+  pages        = {418--431},
+  year         = {2017}
+}
+
+@article{sen2008collective,
+  author       = {Prithviraj Sen and Galileo Namata and Mustafa Bilgic and Lise Getoor and Brian Gallagher and Tina Eliassi‐Rad},
+  title        = {Collective Classification in Network Data},
+  journal      = {{AI} magazine},
+  year         = {2008}
+}
+
+@inproceedings{shazeer2017outrageously,
+  author       = {Noam Shazeer and *Azalia Mirhoseini and *Krzysztof Maziarz and Andy Davis and Quoc Le and Geoffrey Hinton and Jeff Dean},
+  title        = {Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer},
+  booktitle    = iclr,
+  year         = {2017}
 }
 
 @inproceedings{shim2017svd,
@@ -440,6 +921,14 @@
   year         = {2005}
 }
 
+@inproceedings{singh2021cost,
+  author       = {Rachee Singh and Sharad Agarwal and Matt Calder and Paramvir Bahl},
+  title        = {Cost-effective Cloud Edge Traffic Engineering with Cascara},
+  booktitle    = nsdi,
+  pages        = {201--216},
+  year         = {2021}
+}
+
 @inproceedings{smith2023simplified,
   author       = {Jimmy T. H. Smith and Andrew Warrington and Scott Linderman},
   title        = {Simplified State Space Layers for Sequence Modeling},
@@ -447,10 +936,32 @@
   year         = {2023}
 }
 
+@misc{su2021roformer,
+  author       = {Jianlin Su and Murtadha Ahmed and Yu Lu and Shengfeng Pan and Wen Bo and Yunfeng Liu},
+  title        = {RoFormer: Enhanced transformer with Rotary Position Embedding},
+  howpublished = arxiv # "2104.09864",
+  year         = {2021}
+}
+
+@inproceedings{sun2023length,
+  author       = {Yutao Sun and Li Dong and Barun Patra and Shuming Ma and Shaohan Huang and Alon Benhaim and Vishrav Chaudhary and Xia Song and Furu Wei},
+  title        = {A Length-Extrapolatable {Transformer}},
+  booktitle    = acl,
+  year         = {2023}
+}
+
 @inproceedings{sun2024simple,
   author       = {Mingjie Sun and Zhuang Liu and Anna Bair and J Zico Kolter},
   title        = {A Simple and Effective Pruning Approach for Large Language Models},
   booktitle    = iclr,
+  year         = {2024}
+}
+
+@inproceedings{tang2024graphgpt,
+  author       = {Jiabin Tang and Yuhao Yang and Wei Wei and Lei Shi and Lixin Su and Suqi Cheng and Dawei Yin and Chao Huang},
+  title        = {{GraphGPT}: Graph Instruction Tuning for Large Language Models},
+  booktitle    = sigir,
+  pages        = {491--500},
   year         = {2024}
 }
 
@@ -468,11 +979,49 @@
   year         = {2017}
 }
 
+@inproceedings{velickovic2019deep,
+  author       = {Petar Veli{\v{c}}kovi{\'c} and William Fedus and William L Hamilton and Pietro Li{\`o} and Yoshua Bengio and R Devon Hjelm},
+  title        = {Deep Graph Infomax},
+  booktitle    = iclr,
+  year         = {2019}
+}
+
 @inproceedings{voelker2019legendre,
   author       = {Aaron Voelker and Ivana Kaji{\'c} and Chris Eliasmith},
   title        = {{Legendre Memory Units}: Continuous-Time Representation in Recurrent Neural Networks},
   booktitle    = neurips,
   year         = {2019}
+}
+
+@inproceedings{wang2024netassistant,
+  author       = {Haopei Wang and Anubhavnidhi Abhashkumar and Changyu Lin and Tianrong Zhang and Xiaoming Gu and Ning Ma and Chang Wu and Songlin Liu and Wei Zhou and Yongbin Dong and Weirong Jiang and Yi Wang},
+  title        = {{NetAssistant}: Dialogue Based Network Diagnosis in Data Center Networks},
+  booktitle    = nsdi,
+  pages        = {2011--2024},
+  year         = {2024}
+}
+
+@article{wang2024netconfeval,
+  author       = {Changjie Wang and Mariano Scazzariello and Alireza Farshin and Simone Ferlin and Dejan Kosti\'{c} and Marco Chiesa},
+  title        = {{NetConfEval}: Can {LLMs} Facilitate Network Configuration?},
+  journal      = {Proc. {ACM} Netw.},
+  volume       = {2},
+  number       = {CoNEXT2},
+  year         = {2024}
+}
+
+@inproceedings{wang2025generalization,
+  author       = {Haoyu Peter Wang and Shikun Liu and Rongzhe Wei and Pan Li},
+  title        = {Generalization Principles for Inference over Text-Attributed Graphs with Large Language Models},
+  booktitle    = icml,
+  year         = {2025}
+}
+
+@inproceedings{wang2025graph,
+  author       = {Haoyu Peter Wang and Peihao Wang and Mufei Li and Shikun Liu and Siqi Miao and Zhangyang Wang and Pan Li},
+  title        = {Graph-{KV}: Breaking Sequence via Injecting Structural Biases into Large Language Models},
+  booktitle    = neurips,
+  year         = {2025}
 }
 
 @inproceedings{wen2016learning,
@@ -490,12 +1039,56 @@
   year         = {2018}
 }
 
+@inproceedings{wu2024netllm,
+  author       = {Duo Wu and Xianda Wang and Yaqi Qiao and Zhi Wang and Junchen Jiang and Shuguang Cui and Fangxin Wang},
+  title        = {{NetLLM}: Adapting Large Language Models for Networking},
+  booktitle    = sigcomm,
+  pages        = {661--678},
+  year         = {2024}
+}
+
+@inproceedings{wu2025catp,
+  author       = {Duo Wu and Jinghe Wang and Yuan Meng and Yanning Zhang and Le Sun and Zhi Wang},
+  title        = {CATP-LLM: Empowering Large Language Models for Cost-Aware Tool Planning},
+  booktitle    = iccv,
+  year         = {2025}
+}
+
+@inproceedings{xiao2023haloc,
+  author       = {Jinqi Xiao and Chengming Zhang and Yu Gong and Miao Yin and Yang Sui and Lizhi Xiang and Dingwen Tao and Bo Yuan},
+  title        = {{HALOC}: Hardware-Aware Automatic Low-Rank Compression for Compact Neural Networks},
+  booktitle    = aaai,
+  year         = {2023}
+}
+
+@inproceedings{xu2023teal,
+  author       = {Zhiying Xu and Francis Y. Yan and Rachee Singh and Justin T. Chiu and Alexander M. Rush and Minlan Yu},
+  title        = {Teal: Learning-Accelerated Optimization of {WAN} Traffic Engineering},
+  booktitle    = sigcomm,
+  pages        = {378--393},
+  year         = {2023}
+}
+
+@inproceedings{xu2025openrca,
+  author       = {Junjielong Xu and Qinan Zhang and Zhiqing Zhong and Shilin He and Chaoyun Zhang and Qingwei Lin and Dan Pei and Pinjia He and Dongmei Zhang and Qi Zhang},
+  title        = {Open{RCA}: Can Large Language Models Locate the Root Cause of Software Failures?},
+  booktitle    = iclr,
+  year         = {2025}
+}
+
 @inproceedings{yang2017tensor,
   author       = {Yinchong Yang and Denis Krompass and Volker Tresp},
   title        = {Tensor-train recurrent neural networks for video classification},
   booktitle    = icml,
   pages        = {3891--3900},
   year         = {2017}
+}
+
+@article{yang2024gl,
+  author       = {Haotong Yang and Xiyuan Wang and Qian Tao and Shuxian Hu and Zhouchen Lin and Muhan Zhang},
+  title        = {{GL}-{F}usion: Rethinking the Combination of Graph Neural Network and Large Language model.},
+  journal      = {CoRR},
+  year         = {2024}
 }
 
 @inproceedings{ye2018learning,
@@ -506,11 +1099,32 @@
   year         = {2018}
 }
 
+@inproceedings{ye2024language,
+  author       = {Ruosong Ye and Caiqi Zhang and Runhui Wang and Shuyuan Xu and Yongfeng Zhang},
+  title        = {Language is All a Graph Needs},
+  booktitle    = acl,
+  year         = {2024}
+}
+
 @misc{zaremba2014recurrent,
   author       = {Wojciech Zaremba and Ilya Sutskever and Oriol Vinyals},
   title        = {Recurrent Neural Network Regularization},
   howpublished = arxiv # "1409.2329",
   year         = {2014}
+}
+
+@inproceedings{zhang2024graphtranslator,
+  author       = {Mengmei Zhang and Mingwei Sun and Peng Wang and Shen Fan and Yanhu Mo and Xiaoxiao Xu and Hong Liu and Cheng Yang and Chuan Shi},
+  title        = {{GraphTranslator}: Aligning Graph Model to Large Language Model for Open-ended Tasks},
+  booktitle    = www,
+  year         = {2024}
+}
+
+@misc{zhao2023graphtext,
+  author       = {Jianan Zhao and Le Zhuo and Yikang Shen and Meng Qu and Kai Liu and Michael Bronstein and Zhaocheng Zhu and Jian Tang},
+  title        = {Graph{Text}: Graph Reasoning in Text Space},
+  howpublished = arxiv # "2310.01089",
+  year         = {2023}
 }
 
 @inproceedings{zhou2021informer,
@@ -521,9 +1135,23 @@
   year         = {2021}
 }
 
+@inproceedings{zhu2020homophily,
+  author       = {Jiong Zhu and Yujun Yan and Lingxiao Zhao and Mark Heimann and Leman Akoglu and Danai Koutra},
+  title        = {Beyond homophily in graph neural networks: current limitations and effective designs},
+  booktitle    = neurips,
+  year         = {2020}
+}
+
 @inproceedings{zhu2024vision,
   author       = {Lianghui Zhu and Bencheng Liao and Qian Zhang and Xinlong Wang and Wenyu Liu and Xinggang Wang},
   title        = {Vision {Mamba}: Efficient Visual Representation Learning with Bidirectional State Space Model},
   booktitle    = icml,
   year         = {2024}
+}
+
+@inproceedings{zhuang2021robustly,
+  author       = {Liu Zhuang and Lin Wayne and Shi Ya and Zhao Jun},
+  title        = {A Robustly Optimized {BERT} Pre-training Approach with Post-training},
+  booktitle    = {Proc. Chinese National Conference on Computational Linguistics},
+  year         = {2021}
 }
